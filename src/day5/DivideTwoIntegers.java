@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class DivideTwoIntegers {
 
-    //??
     public static int divide(int dividend, int divisor) {
 
         long p = (long) dividend / (long) divisor;
