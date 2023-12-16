@@ -1,4 +1,4 @@
-package day16;
+package day15;
 
 public class ReverseVowelsOfAString {
 
