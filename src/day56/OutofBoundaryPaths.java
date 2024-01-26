@@ -1,5 +1,8 @@
 package day56;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class OutofBoundaryPaths {
     public int findPaths(int m, int n, int N, int x, int y) {
         final int M = 1000000000 + 7;
