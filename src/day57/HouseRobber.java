@@ -1,6 +1,6 @@
 package day57;
 
-public class HouseRobber_Leetcode_198 {
+public class HouseRobber {
 
     //??
     public static int rob(int[] nums) {
