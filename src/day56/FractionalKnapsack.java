@@ -1,10 +1,18 @@
 package day56;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
+import java.util.Comparator;
+
+class Item {
+    int value, weight;
+    Item(int x, int y){
+        this.value = x;
+        this.weight = y;
+    }
+}
 
 public class FractionalKnapsack {
-    double fractionalKnapsack(int W, Item arr[], int n) {
+   public static double fractionalKnapsack(int W, Item[] arr, int n) {
         // Your code here
         double val = 0;
         double[][] ratio = new double[n][2];
@@ -26,4 +34,7 @@ public class FractionalKnapsack {
         }
         return val;
     }
+    public static void main(String[] args) {
+        Item[] items = {new Item(5, 6), new Item(10, 20), new Item(15, 30)};
+        System.out.println(fractionalKnapsack(50, items, items.length));    }
 }
