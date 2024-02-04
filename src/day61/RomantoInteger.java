@@ -1,7 +1,13 @@
 package day61;
 
+import java.util.HashMap;
+
 public class RomantoInteger {
-    public int romanToInt(String s) {
+    public static int romanToInt(String s) {
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
+
         HashMap<Character, Integer> hm = new HashMap<>();
         hm.put('I', 1);
         hm.put('V', 5);
@@ -10,14 +16,26 @@ public class RomantoInteger {
         hm.put('C', 100);
         hm.put('D', 500);
         hm.put('M', 1000);
+
         int pval = 0;
         int ans = 0;
+
         for (int i = s.length() - 1; i >= 0; i--) {
-            int cval = hm.get(s.charAt(i));
-            if (cval >= pval) ans += cval;
-            else ans -= cval;
+            int cval = hm.getOrDefault(s.charAt(i), 0);
+
+            if (cval >= pval) {
+                ans += cval;
+            } else {
+                ans -= cval;
+            }
+
             pval = cval;
         }
+
         return ans;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(romanToInt("III"));
     }
 }
