@@ -1,3 +1,5 @@
+package day73;
+
 import java.util.HashSet;
 
 public class ContainsDuplicate {
