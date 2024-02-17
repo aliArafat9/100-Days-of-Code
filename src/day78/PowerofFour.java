@@ -3,7 +3,7 @@ package day78;
 import java.util.Scanner;
 
 public class PowerofFour {
-    public static boolean isPowerOfThree(int n) {
+    public static boolean (int n) {
 
         if (n <= 0) {
             return false;
@@ -21,7 +21,7 @@ public class PowerofFour {
         System.out.println("Enter a number");
         int n = sc.nextInt();
 
-        boolean result = isPowerOfThree(n);
+        boolean result = isPowerOfFour(n);
 
         if (result) {
             System.out.println(n + " is a power of four.");
