@@ -16,7 +16,6 @@ public class BinaryGap {
         }
         return max;
     }
-
     public static void main(String[] args) {
         BinaryGap binaryGapCalculator = new BinaryGap();
         int result = binaryGapCalculator.binaryGap(22); // Replace 22 with your desired input
